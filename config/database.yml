@@ -9,17 +9,45 @@ development:
   pool: 5
   timeout: 5000
 
+#    adapter: postgresql
+#    host: localhost
+#    encoding: utf8
+#    database: development
+#    pool: 5
+#    username:
+#    password:
+
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+
+#test:
   adapter: sqlite3
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
 
-production:
+test: &Test
+#    adapter: postgresql
+#    host: localhost
+#    encoding: utf8
+#    database: sampleapp_test
+#    pool: 5
+#    username:
+#    password:
+        
+#production:
   adapter: sqlite3
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+production:
+#    adapter: postgresql
+#    host: localhost
+#    encoding: utf8
+ #   database: sampleapp_production
+#    pool: 5
+#    username:
+#    password:
+        
