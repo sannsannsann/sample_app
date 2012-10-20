@@ -11,6 +11,7 @@ gem 'bcrypt-ruby', '3.0.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 gem 'annotate', '2.5.0', group: :development
